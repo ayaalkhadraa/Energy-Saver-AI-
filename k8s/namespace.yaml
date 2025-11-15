@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: energy-saver-ai-
+  labels:
+    app.kubernetes.io/name: energy-saver-ai-
+    environment: dev

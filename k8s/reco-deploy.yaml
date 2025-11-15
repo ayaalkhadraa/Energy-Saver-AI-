@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: recommendation-api
+  namespace: energy-saver-ai
+  labels:
+    app: recommendation-api
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: recommendation-api
+  template:
+    metadata:
+      labels:
+        app: recommendation-api
+    spec:
+      containers:
+        - name: recommendation-api
+          # Ersetze das Image durch deinen Registry-Tag, z.B. quay.io/youruser/recommendation-api:tag
+          image: <your-registry>/recommendation-api:latest
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 8000
+          env:
+            - name: API_HOST
+              value: "0.0.0.0"
+            - name: API_PORT
+              value: "8000"
+            - name: USAGE_API
+              value: "http://usage-sim-api:8000"
+            - name: DEFAULT_LANGUAGE
+              value: "de"
+          resources:
+            requests:
+              cpu: "100m"
+              memory: "128Mi"
+            limits:
+              cpu: "500m"
+              memory: "512Mi"
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 5
+            periodSeconds: 10
+            failureThreshold: 3
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8000
+            initialDelaySeconds: 15
+            periodSeconds: 20
+            failureThreshold: 5

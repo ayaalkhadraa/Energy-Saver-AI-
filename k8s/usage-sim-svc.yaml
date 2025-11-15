@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: usage-sim-api-svc
+  namespace: energy-saver-ai
+  labels:
+    app: usage-sim-api
+spec:
+  type: ClusterIP
+  selector:
+    app: usage-sim-api
+  ports:
+    - name: http
+      port: 80
+      targetPort: 8000
