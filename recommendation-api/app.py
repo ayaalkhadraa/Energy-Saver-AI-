@@ -10,7 +10,7 @@ load_dotenv()
 
 # Konfiguration über Umgebungsvariablen
 USAGE_API = os.getenv("USAGE_API", "http://usage-sim-api:8000")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY", "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")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")  
 OPENAI_MODEL = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
 AI_SAFE_MODE = os.getenv("AI_SAFE_MODE", "true").lower() == "true"
 DEFAULT_LANGUAGE = os.getenv("DEFAULT_LANGUAGE", "de")
