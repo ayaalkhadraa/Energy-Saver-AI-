@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: usage-sim-api
-          image: <your-registry>/usage-sim-api:latest
+          image: usage-sim-api:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000

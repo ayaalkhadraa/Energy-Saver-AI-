@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
         - name: recommendation-api
-          # Ersetze das Image durch deinen Registry-Tag, z.B. quay.io/youruser/recommendation-api:tag
-          image: <your-registry>/recommendation-api:latest
+          # Lokales Image für Demo-Zwecke
+          image: recommendation-api:latest
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8000
@@ -28,7 +28,7 @@ spec:
             - name: API_PORT
               value: "8000"
             - name: USAGE_API
-              value: "http://usage-sim-api:8000"
+              value: "http://usage-sim-api-svc:80"
             - name: DEFAULT_LANGUAGE
               value: "de"
           resources:

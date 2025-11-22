@@ -184,7 +184,7 @@ Energy Saver AI ist ein Katalysator für die Energiewende auf Bürgerebene. Durc
 - **Deterministische Simulation:** Reproduzierbare Ergebnisse für Testbarkeit
 - **API-Dokumentation:** Automatische OpenAPI-Spezifikation via FastAPI
 - **Regelbasierte Logik:** Nachvollziehbare Algorithmen als Primary Safety Layer
-# Zukunftsvision – Wie könnte das Projekt in 5–10 Jahren aussehen?
+#  Zukunftsvision – Wie könnte das Projekt in 5–10 Jahren aussehen?
 ## **Entwicklungsstufen:**
 ### **Phase 1 (2025-2027): Production-Ready**
 - Smart-Meter Integration statt Simulation
@@ -200,18 +200,4 @@ Energy Saver AI ist ein Katalysator für die Energiewende auf Bürgerebene. Durc
 - Standard für kommunale Energieeffizienz-APIs
 ## **Langfristige Vision:** 
 **Flächendeckende Energieberatung** in deutschen Smart Cities durch standardisierte, Open Source Lösung
-
----
-
-## 🎤 Pitch-Materialien
-
-In diesem Repository findest du alle Materialien für die Projektpräsentation:
-
-- **📄 `pitch/pitch-script.md`** - Vollständiges Pitch-Skript mit allen Details
-- **⏱️ `pitch/pitch-script-3min.md`** - Kompakte 3-Minuten Präsentationsversion  
-- **🔊 `pitch/pitch-recording.m4a`** - Audio-Aufzeichnung des Pitches
-- **✅ `pitch/audio-pitch-checklist.md`** - Checkliste für die Präsentation
-
-### 🎧 Pitch anhören
-Die Audio-Aufzeichnung kann direkt von GitHub heruntergeladen und mit jedem Standard-Mediaplayer abgespielt werden (.m4a Format, kompatibel mit VLC, Windows Media Player, etc.)
   
